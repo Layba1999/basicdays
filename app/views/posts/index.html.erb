@@ -1,0 +1,21 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+
+<ul>
+	<% @posts.each do |p| %>
+	<li>
+		<h4><%= p.title %></h4>
+		<p><%= p.content %></p> | <%= link_to "Delete", destroy_post_path(p), method: 'delete' %></p>
+	</li>
+	<% end %>
+</ul>
+
+
+
+<p><%= link_to 'Create Post', posts_new_path %></p>
+
+
+
+
+

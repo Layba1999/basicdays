@@ -1,0 +1,8 @@
+
+<h1>
+	<%= @user.name %>
+	<p><%= link_to "Edit" edit_list_path(@user) %></p>
+	<p><%= link_to "Delete" list_path(@user), :data=>{ :confirm=>"You sure?", :method=>"delete"} %></p>
+
+
+</h1>
